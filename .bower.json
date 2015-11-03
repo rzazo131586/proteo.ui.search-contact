@@ -5,13 +5,13 @@
   "ignore": [],
   "dependencies": {
   },
-  "homepage": "https://github.com/pktito/proteo.ui.search-contact",
+  "homepage": "https://github.com/rz131586/proteo.ui.search-contact",
   "_release": "0.0.1",
   "_resolution": {
     "type": "version",
     "tag": "v0.0.1"
   },
-  "_source": "https://github.com/pktito/proteo.ui.search-contact.git",
+  "_source": "https://github.com/rz131586/proteo.ui.search-contact.git",
   "_target": "~0.0.1",
   "_originalSource": "proteo.ui.search-contact"
 }
