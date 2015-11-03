@@ -1,0 +1,17 @@
+{
+  "name": "proteo.ui.search-contact",
+  "version": "0.0.1",
+  "main": "./src/proteo.ui.search-contact-directive.js",
+  "ignore": [],
+  "dependencies": {
+  },
+  "homepage": "https://github.com/pktito/proteo.ui.search-contact",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1"
+  },
+  "_source": "https://github.com/pktito/proteo.ui.search-contact.git",
+  "_target": "~0.0.1",
+  "_originalSource": "proteo.ui.search-contact"
+}

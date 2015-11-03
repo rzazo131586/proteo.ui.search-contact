@@ -1,0 +1,8 @@
+<div>
+	<h4>{{datatitle | uppercase}}</h4>
+    <div class="input-group searchbar">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+        <input id="searchID" ng-value="searching" type="text" class="form-control" ng-model="datafilter.filterText" placeholder="{{dataplaceholder}}">
+    </div>
+    <div id="grid1" ng-grid="dataContact" ui-grid-edit class="gridStyle"></div>
+</div>
