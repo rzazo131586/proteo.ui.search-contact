@@ -1,12 +1,7 @@
 angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  function($scope) {
 		console.log("that is of Controller");
-
-		$scope.dataContact = {
-			data : 'datasource',
-			filterOptions : 'datafilter'
-		};
-
-}).directive("gridContact", function(){
+})
+/*.directive("gridContact", function(){
 	console.log("that is of Directive Grid");
 	return {
 		restrict: "AE",
@@ -15,6 +10,18 @@ angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  
 			datasource 		: '=datasource',
 			datafilter 		: '=datafilter',
 			dataplaceholder : '=dataplaceholder'
+		},
+		controller : 'searchContactCtrl',
+		//template: template
+		templateUrl: './bower_components/proteo.ui.search-contact/src/proteo.ui.search-contact.tpl.html'
+	};
+});*/
+.directive("gridContact", function(){
+	console.log("that is of Directive Grid");
+	return {
+		restrict: "AE",
+		scope: {
+			datacontact : '=datacontact'
 		},
 		controller : 'searchContactCtrl',
 		//template: template
