@@ -9,7 +9,6 @@ angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  
 		};
 
 }).directive("gridContact", function(){
-
 	console.log("that is of Directive Grid");
 	return {
 		restrict: "AE",
@@ -23,7 +22,6 @@ angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  
 		//template: template
 		templateUrl: './bower_components/proteo.ui.search-contact/src/proteo.ui.search-contact.tpl.html'
 	};
-	
 });
 angular.module("proteo.ui.search-contact", []).filter('searchContact-filter', function(){
 
