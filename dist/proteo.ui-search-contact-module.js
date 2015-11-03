@@ -1,3 +1,3 @@
-angular.module("proteo.ui.search-person", []){
+angular.module("proteo.ui.search-contact", []){
 
 });
