@@ -1,10 +1,13 @@
 {
   "name": "proteo.ui.search-contact",
+  "description": "proteo.ui.search-contact",
   "version": "0.0.1",
   "main": "./src/proteo.ui.search-contact-directive.js",
   "ignore": [
   	"*.txt"
   ],
   "dependencies": {
+  },
+  "devDependencies": {
   }
 }
