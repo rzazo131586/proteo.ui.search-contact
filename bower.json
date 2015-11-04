@@ -3,11 +3,19 @@
   "description": "proteo.ui.search-contact",
   "version": "0.0.1",
   "main": "./dist/index.js",
-  "ignore": [
-  	"*.txt"
-  ],
   "dependencies": {
   },
   "devDependencies": {
-  }
+  },
+  "ignore": [
+    "node_modules",
+    ".sass-cache",
+    "src",
+    "test",
+    "**/.*",
+    "gruntfile.js",
+    "package.json",
+    "config.rb"
+    "*.txt"
+  ]
 }
