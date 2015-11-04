@@ -3,27 +3,11 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		concat: {
-		  directive: {
-		    src: [
-		    	'src/**/*-directive.js'
-		    ],
-		    dest: 'dist/proteo.ui.search-contact-directive.js',
-		  },
-		  filter: {
-		    src: [
-		    	'src/**/*-filter.js'
-		    ],
-		    dest: 'dist/proteo.ui.search-contact-filter.js',
-		  },
-  		  module: {
-		    src: [
-		    	'src/**/*-module.js'
-		    ],
-		    dest: 'dist/proteo.ui.search-contact-module.js',
-		  },
   		  all: {
 		    src: [
-		    	'src/**/*.js'
+		    	'src/**/*-module.js',
+		    	'src/**/*-directive.js',
+		    	'src/**/*-filter.js'
 		    ],
 		    dest: 'dist/proteo.ui.search-contact.js',
 		  }
@@ -89,7 +73,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'concat',
 		'compass',
-		'uglify',
 		'copy',
 		'watch'
 	]);
