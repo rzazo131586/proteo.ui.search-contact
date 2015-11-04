@@ -1,26 +1,8 @@
 <div>
     <!-- <div id="grid1" ng-grid="dataContact" ui-grid-edit class="gridStyle"></div> -->
-	<tabset>
-		<tab>
-		    <tab-heading>
-		        <i class="glyphicon glyphicon-th-list"></i>
-		    </tab-heading>
-		    <div class="row list">
-		        <div class="col-md-12" ng-repeat="contact in datacontact | filterBy:['description.$', 'owner.$', 'numTitulares.$', 'accountNumber.$', 'balance.$']:searchText | orderObjectBy:'description.$':model.sortOrder">
-		            <div class="panel account-item" ui-sref="accountDetail({id:contact.accountNumber.$})">
-		                <div class="item-body clearfix">
-		                    <div class="pull-left">
-		                        <div class="account-name">{{contact.description.$}}</div>
-		                        <div class="account-holder">{{contact.owner.$}} <span> and {{contact.numTitulares.$ - 1}} more</span></div>
-		                    </div>
-		                    <div class="pull-right text-right">
-		                        <div class="account-number">{{contact.accountNumber.$}}</div>
-		                        <div class="account-balance"><span class="currency">EUR</span> <span>{{contact.balance.$ | number : 2}}</span></div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</tab>
-	</tabset>
+    <div ng-repeat="contact in datacontact">
+    	<div ui-sref="detailContact/({name:account.name})">
+    		{{contact.name}}
+    	</div>
+    </div>
 </div>
