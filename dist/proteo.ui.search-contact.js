@@ -1,3 +1,4 @@
+angular.module("proteo.ui.search-contact", []);
 angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  function($scope) {
 		console.log("that is of Controller");
 })
@@ -31,5 +32,3 @@ angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  
 angular.module("proteo.ui.search-contact", []).filter('searchContact-filter', function(){
 
 });
-angular.module("proteo.ui.search-contact", []);
-/* Controller of detail contact */
