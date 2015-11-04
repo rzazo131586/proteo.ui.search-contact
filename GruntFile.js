@@ -7,25 +7,25 @@ module.exports = function(grunt) {
 		    src: [
 		    	'src/**/*-directive.js'
 		    ],
-		    dest: 'dist/proteo.ui.filter-contact-directive.js',
+		    dest: 'dist/proteo.ui.search-contact-directive.js',
 		  },
 		  filter: {
 		    src: [
 		    	'src/**/*-filter.js'
 		    ],
-		    dest: 'dist/proteo.ui.filter-contact-filter.js',
+		    dest: 'dist/proteo.ui.search-contact-filter.js',
 		  },
   		  module: {
 		    src: [
 		    	'src/**/*-module.js'
 		    ],
-		    dest: 'dist/proteo.ui.filter-contact-module.js',
+		    dest: 'dist/proteo.ui.search-contact-module.js',
 		  },
   		  all: {
 		    src: [
 		    	'src/**/*.js'
 		    ],
-		    dest: 'dist/proteo.ui.filter-contact.js',
+		    dest: 'dist/proteo.ui.search-contact.js',
 		  }
 		},
 		compass: {                  		// Task
