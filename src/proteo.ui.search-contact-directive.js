@@ -16,8 +16,8 @@ angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  
 		templateUrl: './bower_components/proteo.ui.search-contact/src/proteo.ui.search-contact.tpl.html'
 	};
 });*/
-.directive("gridContact", function(){
-	console.log("that is of Directive Grid");
+.directive("listContact", function(){
+	console.log("that is listContact");
 	return {
 		restrict: "AE",
 		scope: {
@@ -25,6 +25,6 @@ angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  
 		},
 		controller : 'searchContactCtrl',
 		//template: template
-		templateUrl: './bower_components/proteo.ui.search-contact/src/proteo.ui.search-contact.tpl.html'
+		templateUrl: './bower_components/proteo.ui.search-contact/dist/proteo.ui.search-contact.tpl.html'
 	};
 });
