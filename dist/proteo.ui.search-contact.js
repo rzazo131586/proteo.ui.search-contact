@@ -1,4 +1,4 @@
-angular.module("proteo.ui.search-contact", []);
+/* Todo Module */
 angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  function($scope) {
 		console.log("that is of Controller");
 })
@@ -29,6 +29,4 @@ angular.module("proteo.ui.search-contact", []).controller("searchContactCtrl",  
 		templateUrl: './bower_components/proteo.ui.search-contact/dist/proteo.ui.search-contact.tpl.html'
 	};
 });
-angular.module("proteo.ui.search-contact", []).filter('searchContact-filter', function(){
-
-});
+/* Todo Filter */
