@@ -2,6 +2,32 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		concat: {
+		  directive: {
+		    src: [
+		    	'src/**/*-directive.js'
+		    ],
+		    dest: 'dist/proteo.ui.filter-contact-directive.js',
+		  },
+		  filter: {
+		    src: [
+		    	'src/**/*-filter.js'
+		    ],
+		    dest: 'dist/proteo.ui.filter-contact-filter.js',
+		  },
+  		  module: {
+		    src: [
+		    	'src/**/*-module.js'
+		    ],
+		    dest: 'dist/proteo.ui.filter-contact-module.js',
+		  },
+  		  all: {
+		    src: [
+		    	'src/**/*.js'
+		    ],
+		    dest: 'dist/proteo.ui.filter-contact.js',
+		  }
+		},
 		compass: {                  		// Task
 			dist: {                  	 	// Target
 				options: {              	// Target options
@@ -54,18 +80,21 @@ module.exports = function(grunt) {
 	    }
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', [
+		'concat',
 		'compass',
 		'uglify',
 		'copy',
 		'watch'
 	]);
 	grunt.registerTask('dist', [
+		'concat',
 		'compass',
 		'uglify',
 		'copy',
