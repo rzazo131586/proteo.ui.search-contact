@@ -8,14 +8,5 @@
   "devDependencies": {
   },
   "ignore": [
-    "node_modules",
-    ".sass-cache",
-    "src",
-    "test",
-    "**/.*",
-    "gruntfile.js",
-    "package.json",
-    "config.rb"
-    "*.txt"
   ]
 }
