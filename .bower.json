@@ -1,7 +1,7 @@
 {
   "name": "proteo.ui.search-contact",
   "version": "0.0.1",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "ignore": [],
   "dependencies": {
   },
